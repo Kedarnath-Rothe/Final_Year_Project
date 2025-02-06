@@ -8,13 +8,13 @@ const sendEmail = async (email, subject, htmlContent) => {
             secure: false,
             requireTLS: true,
             auth: {
-                user: "kedarnathrothe2003@gmail.com", // Replace with your email
-                pass: 'scmpzcmtrocqcvbv', // Replace with your email password
+                user: "", // Replace with your email
+                pass: '', // Replace with your email password
             },
         });
 
         await transporter.sendMail({
-            from: 'kedarnathrothe2003@gmail.com', // Replace with your email
+            from: '', // Replace with your email
             to: email,
             subject: subject,
             html: htmlContent, // Use 'html' instead of 'text'
