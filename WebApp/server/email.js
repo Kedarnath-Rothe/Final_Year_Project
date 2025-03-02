@@ -8,8 +8,8 @@ const sendEmail = async (email, subject, htmlContent) => {
             secure: false,
             requireTLS: true,
             auth: {
-                user: "", // Replace with your email
-                pass: '', // Replace with your email password
+                user: "", // Replace with your email                        process.env.email
+                pass: '', // Replace with your email password              process.env.passqord
             },
         });
 
